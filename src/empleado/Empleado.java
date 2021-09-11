@@ -29,9 +29,10 @@ public class Empleado {
     }
 
     public Empleado() {
-        
+
     }
 
+    //METODOS =ACCIONES=FUNCIONES
     public int getId() {
         return id;
     }
@@ -61,7 +62,14 @@ public class Empleado {
     }
 
     public void setHoraSemanales(double horaSemanales) {
-        this.horaSemanales = horaSemanales;
+        
+           if( horaSemanales <0 ){
+               System.out.println("Formato invalido");
+           }else{
+                  this.horaSemanales = horaSemanales;
+           }
+        
+         
     }
 
     public int getSalario() {
@@ -71,14 +79,11 @@ public class Empleado {
     public void setSalario(int salario) {
         this.salario = salario;
     }
-    
-    //METODOS =ACCIONES=FUNCIONES
-    
-    public int calcularSalario(double horas, int valor){
-        
-        
+
+    public int calcularSalario(double horas, int valor) {
+
         return 0;
-    
+
     }
 
 }
